@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="50">
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button android:id="@+id/btnSelectImage" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="wrap_content" android:text="选择证件影像"/>
+            <Button android:id="@+id/btnCamera" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="系统相机" android:layout_weight="1" >
+
+            </Button>
+            <Button android:id="@+id/btnFrontCameraCapture" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="自份证正面" android:layout_weight="1" >
+
+            </Button>
+            <Button android:id="@+id/btnBackCameraCapture" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="身份证反面" android:layout_weight="1" >
+
+            </Button>
+            <Button android:id="@+id/btnBankCard" android:layout_width="wrap_content" android:layout_weight="1" android:layout_height="wrap_content" android:text="银行卡识别"/>
+
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView android:id="@+id/imgView" android:layout_width="match_parent" android:layout_height="match_parent"
+                android:background="#433" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50" android:background="#eee">
+        <TextView android:id="@+id/txtView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:text="识别结果:"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
